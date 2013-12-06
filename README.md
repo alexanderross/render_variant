@@ -20,13 +20,13 @@ This gives the ability to specify an additional argument to the path being gener
   
     render @myObject  
   
-which would only resolve to the path myObject/_myObject  
+which would only resolve to the path `myObject/_myObject`  
 
 Using RenderVariant, we now have the ability to do:  
 
     render @myObject, :variant => :small  
 
-which now points to the path myObject/_myObject__small, which could be useful to present @myObject in a bit more terse of style. 
+which now points to the path `myObject/_myObject_small`, which could be useful to present @myObject in a bit more terse of style. 
 
 ---
 ### When can this be useful?
