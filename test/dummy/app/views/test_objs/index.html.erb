@@ -1,0 +1,21 @@
+<div id="test_disp_container">
+	<% if @variant %>
+
+		<%= render @test_objs, :variant => @variant %>
+		<hr/>
+		<% @test_objs.each do |test_obj| %>
+			<%= render :partial=> test_obj, :variant => @variant  %>
+			<br/>
+			<%= render test_obj, :variant => @variant  %>
+		<% end %>
+
+	<% else %>
+		<%= render @test_objs %>
+		<hr/>
+		<% @test_objs.each do |test_obj| %>
+			<%= render :partial=> test_obj %>
+			<br/>
+			<%= render test_obj %>
+		<% end %>
+	<% end %>
+</div>
