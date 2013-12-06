@@ -33,19 +33,19 @@ which now points to the path myObject/_myObject_small, which could be useful to 
 
 Using a variant path is useful where calling render on objects is common, but the objects have multiple 'variations'. Something like a search results page would illustrate this well, where you'd have:  
   
-   <%= render @search_results %>
-
-   <div id="related_results">
+    <%= render @search_results %>
+    
+    <div id="related_results">
        <%= render @related_results %>
-   </div>
+    </div>
 
 In the case where you wanted to display the related results in a less prominent way, there isn't much you can do with the default options. The two collection renders are targeting the same partial, and there's nothing you can *cleanly* do about it. With the variant, you'd then have  
 
-   <%= render @search_results %>
-
-   <div id="related_results">
-       <%= render @related_results, :variant => :preview %>
-   </div>  
+    <%= render @search_results %>
+    
+    <div id="related_results">
+      <%= render @related_results, :variant => :preview %>
+    </div>  
 
 
 
@@ -54,4 +54,5 @@ In the case where you wanted to display the related results in a less prominent 
 Tested in Rails 3 and 4.  
 
     
-[![alt text](https://travis-ci.org/alexanderross/render_variant.png "Build Status")]: http://github.com/alexanderross/render_variant
+![alt text](https://travis-ci.org/alexanderross/render_variant.png "Build Status")
+[repo]: http://github.com/alexanderross/render_variant
