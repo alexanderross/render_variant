@@ -1,4 +1,4 @@
-module CacheDebugging
+module RenderVariant
   class Railtie < Rails::Railtie
     initializer "render_variant.setup" do |app|
       ActiveSupport.on_load(:action_view) do
