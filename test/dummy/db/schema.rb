@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20131206162427) do
 
-  create_table "test_objs", force: true do |t|
+  create_table "variant_objects", force: true do |t|
     t.string   "name"
     t.string   "desc"
     t.datetime "created_at"

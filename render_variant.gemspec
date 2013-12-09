@@ -6,10 +6,10 @@ require "render_variant/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "render_variant"
-  s.version     = "0.1.0"
+  s.version     = RenderVariant::VERSION
   s.authors     = ["alex"]
   s.email       = ["alex@avvo.com"]
-  s.homepage    = "http://www.avvo.com"
+  s.homepage    = "http://github.com/alexanderross/render_variant"
   s.summary     = "Additional ActionView render functionality"
   s.description = "Addition of a :variant argument to ActionView's render function, allowing the presentation of an object in multiple variants."
 

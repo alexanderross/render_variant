@@ -16,11 +16,11 @@ if ActiveSupport::TestCase.method_defined?(:fixture_path=)
   ActiveSupport::TestCase.fixture_path = File.expand_path("../fixtures", __FILE__)
 end
 
-def test_variants
+def variants_for_test
   [:medium, :small]
 end
 
 #How many time we should expect to see the item rendered in index.
 def expected_render_count
-  TestObj.count * 3
+  VariantObject.count * 3
 end
