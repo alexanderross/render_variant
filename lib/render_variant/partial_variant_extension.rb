@@ -7,6 +7,7 @@ module RenderVariant
 
     def setup_with_variant(context, options, block)
       initial_setup = setup_without_variant(context, options, block)
+      return self unless @path
       variant = if(options[:variant])
                   options[:variant]
                 elsif(options[:locals] && options[:locals][:variant])
