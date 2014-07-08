@@ -47,6 +47,10 @@ In the case where you wanted to display the related results in a less prominent 
       <%= render @related_results, :variant => :preview %>
     </div>  
 
+---
+### Warning about cache_digests
+
+The rails cache_digests gem will not detect the partials that render_variant uses as dependencies. As a result, if you use render_variant inside of a cache block, changes to that partial will not expire the cache key. In order to avoid this, you must manually specify your partial dependencies. See [cache_digests documentation](https://github.com/rails/cache_digests#explicit-dependencies) for details.
 
 
 ---
